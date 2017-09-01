@@ -24,6 +24,7 @@ cacheSolve <- function(x, ...) {
         data <- x$get()
         tr <- solve(data)
         x$setrev(tr)
+        message(("This one is calculated:"))
     } else (
         message("This one is from cache:")
     )
